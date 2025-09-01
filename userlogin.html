@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     @font-face {
+        font-family: design2;
+        src: url(./Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: design;
+      src: url(./Montserrat/Montserrat-VariableFont_wght.ttf);
+    }
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .login-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-box {
+      max-width: 400px;
+      width: 100%;
+    }
+    .form-control {
+      border-radius: 25px;
+      padding: 12px 20px;
+    }
+    .btn-login {
+      background-color: #4b8b7f;
+      color: #fff;
+      border-radius: 25px;
+      padding: 10px;
+      width: 100%;
+      font-weight: bold;
+    }
+    .btn-login:hover {
+      background-color: #fff;
+      color:#3a6d65;
+      border:0.5px solid #3a6d65;
+    }
+    .forgot-password {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .illustration {
+      max-width: 500px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-family:design2;
+    }
+    .logo img {
+      width: 40px;
+      margin-right: 10px;
+    }
+    .logo-text {
+      font-size: 20px;
+      color: #3a6d65;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row login-container">
+      <!-- Illustration Section -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img src="images/loginimage.png" alt="Library Illustration" class="img-fluid illustration">
+      </div>
+
+      <!-- Login Form Section -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class="login-box">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo">
+            <span class="logo-text">Queen Public Library</span>
+          </div>
+          <form style="font-family:design;">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="USERNAME">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="PASSWORD">
+            </div>
+            <button type="submit" class="btn btn-login">LOGIN</button>
+          </form>
+          <div class="forgot-password">
+            <a href="User_register.php">Register Here?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
